@@ -1,6 +1,7 @@
 # What is Daggerfall Unity?
 
 > Daggerfall Unity is an open source recreation of Daggerfall in the Unity engine created by [Daggerfall Workshop](http://www.dfworkshop.net).
+> The aim of this fork is to experiment with getting it working on Android. 
 
 ## Classic Daggerfall Plus
 

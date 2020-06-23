@@ -516,7 +516,7 @@ namespace DaggerfallWorkshop.Game.UserInterface
             // Load font
             string filename = font.ToString() + ".FNT";
             if (!fntFile.Load(Path.Combine(DaggerfallUI.Instance.FontsFolder, filename), FileUsage.UseMemory, true))
-                throw new Exception("DaggerfallFont failed to load font " + filename);
+                throw new Exception("DaggerfallFont failed to load font " + Path.Combine(DaggerfallUI.Instance.FontsFolder, filename));
 
             // Start new glyph dictionary
             // Daggerfall fonts start at ASCII 33 '!' so we must create our own space glyph for ASCII 32

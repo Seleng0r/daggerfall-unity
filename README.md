@@ -2,6 +2,12 @@
 
 > Daggerfall Unity is an open source recreation of Daggerfall in the Unity engine created by [Daggerfall Workshop](http://www.dfworkshop.net).
 > The aim of this fork is to experiment with getting it working on Android. 
+> Current workarounds:
+    >- using Unity 2018.4.23f1
+    >- Building using API Compatibility level of .NET 2.0 rather then .NET 2.0 subset
+    >- Reverting Text Mesh Pro to 1.3.0
+    >- Rebulding the fonts folder oustide of the apk (It just wont read it otherwise, more testing needed)
+    >- Currently hangs after the Unity Logo, but it does appear to be reading the game files. 
 
 ## Classic Daggerfall Plus
 

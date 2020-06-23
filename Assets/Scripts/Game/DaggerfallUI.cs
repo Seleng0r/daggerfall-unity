@@ -36,7 +36,6 @@ namespace DaggerfallWorkshop.Game
     public class DaggerfallUI : MonoBehaviour
     {
         const string fontsFolderName = "Fonts";
-        //An attempt at overidding the fonts folder path and rebuilding it elsewhere.
         string finalFontsFolderName = "";
         const string parchmentBorderRCIFile = "SPOP.RCI";
         const string splashVideo = "ANIM0001.VID";
@@ -275,7 +274,7 @@ namespace DaggerfallWorkshop.Game
                 if(finalFontsFolderName.Equals(""))
                     CopyFonts();
                 return finalFontsFolderName;
-                 }
+            }
         }
 
         public PaperDollRenderer PaperDollRenderer
@@ -733,25 +732,25 @@ namespace DaggerfallWorkshop.Game
         /// </summary>
         /// <param name="index">Index of font between 1-5 (default is 4).</param>
         /// <returns>DaggerfallFont</returns>
-        public DaggerfallFont GetFont(int index = 4)
+       public DaggerfallFont GetFont(int index = 4)
         {
             // Attempt to use StreamingAssets for FNT files
             string path = FontsFolder;
             //if (!Directory.Exists(path))
             //{
             //    Debug.LogErrorFormat("Fonts directory path {0} not found. Falling back to Arena2 folder.", path);
-            
+
                 // Try Arena2 path
-                //path = string.Empty;
-                //if (dfUnity.IsPathValidated)
-                    //path = dfUnity.Arena2Path;
-            }
+             //   path = string.Empty;
+             //   if (dfUnity.IsPathValidated)
+              //      path = dfUnity.Arena2Path;
+            //}
 
             // Must have a fonts path by now
             //if (string.IsNullOrEmpty(path))
-           // {
-               // throw new System.Exception("DaggerfallUI could not find a valid path for fonts in StreamingAssets/Fonts or fallback Arena2 folder.");
-           // }
+            //{
+            //    throw new System.Exception("DaggerfallUI could not find a valid path for fonts in StreamingAssets/Fonts or fallback Arena2 folder.");
+            //}
 
             // Try to load font from target path
             switch (index)
@@ -1286,7 +1285,7 @@ namespace DaggerfallWorkshop.Game
 
         #region Singleton
 
-        static DaggerfallUI instance = null;
+      static DaggerfallUI instance = null;
         public static DaggerfallUI Instance
         {
             get
